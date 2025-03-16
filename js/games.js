@@ -67,8 +67,8 @@ const games = {
         "platform": "Arcade, Console, PC, Mobile",
         "genre": "Arcade, Labirinto",
         "description": "Pac-Man è uno dei videogiochi arcade più iconici di tutti i tempi. Il giocatore controlla Pac-Man, una creatura gialla che deve attraversare un labirinto mangiando tutti i puntini ed evitando i fantasmi. Con un gameplay semplice ma coinvolgente, il gioco ha conquistato milioni di giocatori e ha dato vita a uno dei personaggi più riconoscibili nella storia del gaming.",
-        "image": "src/images/PacMan/pacman.jpg",
-        "images": ["src/images/PacMan/pacman1.jpg", "src/images/PacMan/pacman2.jpg"],
+        "image": "src/images/Pacman/pacman.jpg",
+        "images": ["src/images/Pacman/pacman1.jpg", "src/images/Pacman/pacman2.jpg"],
         "video": "https://www.youtube.com/watch?v=uswzriFIf_k",
         "history": "Creato da Toru Iwatani e rilasciato nel 1980 da Namco, Pac-Man è diventato uno dei giochi arcade di maggior successo della storia, generando oltre 2,5 miliardi di dollari in monete nei suoi primi dieci anni. Il design innovativo e l'assenza di violenza lo hanno reso un successo universale, attraendo un pubblico molto ampio. Pac-Man è stato adattato su innumerevoli piattaforme e ha ispirato sequel, serie animate, giocattoli e persino competizioni professionistiche. Ancora oggi, rimane uno dei simboli più iconici del mondo videoludico.",
         "comments": [
