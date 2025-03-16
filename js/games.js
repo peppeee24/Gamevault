@@ -113,7 +113,7 @@ const games = {
         "genre": "Platform",
         "description": "Super Mario Bros. è il gioco che ha rivoluzionato il genere platform e l’industria dei videogiochi, introducendo un level design innovativo, controlli precisi e un mondo iconico. Il giocatore veste i panni di Mario, un idraulico che deve attraversare il Regno dei Funghi per salvare la Principessa Peach dal malvagio Bowser. Con una colonna sonora memorabile e un gameplay perfettamente bilanciato, il titolo è diventato un punto di riferimento per il settore.",
         "image": "src/images/SuperMario/mario.jpg",
-        "images": ["src/images/SuperMario/supermario3.gif", "src/images/SuperMario/mario2.jpg"],
+        "images": ["src/images/SuperMario/Supermario3.gif", "src/images/SuperMario/mario2.jpg"],
         "video": "https://www.youtube.com/watch?v=PAxkBaUyMJ0&pp=ygUcc3VwZXJtYXJpbyBicm9zIDE5ODUgdHJhaWxlcg%3D%3D",
         "history": "Rilasciato nel 1985 per il Nintendo Entertainment System (NES), Super Mario Bros. è stato un successo straordinario, vendendo oltre 58 milioni di copie e diventando uno dei giochi più influenti di tutti i tempi. Ideato da Shigeru Miyamoto, il titolo ha ridefinito gli standard del game design e ha contribuito alla rinascita dell’industria videoludica dopo la crisi del 1983. Il gioco ha dato il via a uno dei franchise più longevi e amati della storia, con innumerevoli sequel e spin-off che continuano a conquistare generazioni di giocatori.",
         "comments": [
