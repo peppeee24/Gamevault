@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <!-- Dublin Core Metadata -->
+    <meta name="DC.Title" content="Collezione - Game Vault">
+    <meta name="DC.Creator" content="GameVault">
+    <meta name="DC.Subject" content="Archivio di videogiochi, storia dei videogiochi, cultura videoludica">
+    <meta name="DC.Description" content="Scopri la collezione completa di Game Vault con i videogiochi più iconici e storici di sempre.">
+    <meta name="DC.Publisher" content="GameVault">
+    <meta name="DC.Contributor" content="Giuseppe Cozza">
+    <meta name="DC.Date" content="2025-03-04">
+    <meta name="DC.Type" content="Website Section">
+    <meta name="DC.Format" content="text/html">
+    <meta name="DC.Identifier" content="https://www.gamevault.com/collezione.html">
+    <meta name="DC.Source" content="https://www.gamevault.com">
+    <meta name="DC.Language" content="it">
+    <meta name="DC.Relation" content="https://www.gamevault.com/index.html">
+    <meta name="DC.Coverage" content="Mondo, Videogiochi">
+    <meta name="DC.Rights" content="© 2025 GameVault - Tutti i diritti riservati.">
+
+
+    <meta name="keywords" content="collezione videogiochi, archivio videogiochi, storia dei videogiochi, giochi retro, giochi arcade, Super Mario, Pac-Man, Tetris, Pokémon, Minecraft, giochi storici, giochi più iconici, Game Vault">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/images/logo.png">
+    <link rel="shortcut icon" href="src/images/logo.png">
+    <link rel="apple-touch-icon" href="src/images/logo.png">
+    <title>Game Vault - Collezione</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="collection-page">
+
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <span class="brand-text"><i class="fas fa-gamepad"></i> Game Vault</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="collezione.html"><i class="fas fa-gamepad"></i> Games</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-info-circle"></i> Info</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="about.html">About</a></li>
+                                <li><a class="dropdown-item" href="webproject.html">WebProject Plan</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="contatti.html"><i class="fas fa-envelope"></i> Contatti</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Home</a> » <span>Games</span>
+        </div>
+    </nav>
+
+    <!-- BARRA DI RICERCA GIOCHI -->
+    <section class="search-collection-section">
+        <div class="container">
+            <h2>🔍 Cerca un gioco nella collezione</h2>
+            <div class="search-container-collection">
+                <input type="text" id="search-collection-box" class="search-bar-collection" placeholder="Cerca un videogioco...">
+                <button id="search-collection-button" class="search-button-collection">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+      <!-- SEZIONE FILTRI -->
+      <section class="filters-section">
+        <div class="container mt-4">
+            <h3>🔧 Filtri</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="genre-select" class="form-label">Genere</label>
+                    <select id="genre-select" class="form-select">
+                        <option value="">Seleziona un genere</option>
+                        <option value="action">Azione</option>
+                        <option value="adventure">Avventura</option>
+                        <option value="rpg">GDR</option>
+                        <option value="strategy">Strategia</option>
+                        <option value="sports">Sport</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="platform-select" class="form-label">Piattaforma</label>
+                    <select id="platform-select" class="form-select">
+                        <option value="">Seleziona una piattaforma</option>
+                        <option value="pc">PC</option>
+                        <option value="ps4">PlayStation 4</option>
+                        <option value="xbox">Xbox</option>
+                        <option value="switch">Nintendo Switch</option>
+                        <option value="mobile">Mobile</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="year-select" class="form-label">Anno di uscita</label>
+                    <select id="year-select" class="form-select">
+                        <option value="">Seleziona un anno</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mt-3">
+                <button class="btn btn-primary" id="apply-filters-button">Applica Filtri</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SEZIONE COLLEZIONE -->
+    <section class="collection-section">
+        <div class="container">
+            <h2>📚 La Nostra Collezione</h2>
+            <p>Scopri tutti i giochi disponibili nella nostra collezione.</p>
+            <div class="games-container" id="collection-container"></div>
+        </div>
+    </section>
+
+    <!-- PAGINAZIONE -->
+    <section class="pagination-section">
+        <div class="container">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#" tabindex="-1">Precedente</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Successivo</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+
+    <!-- LINEA TEMPORALE DEI GIOCHI PIÙ VECCHI -->
+    <section class="timeline-section">
+        <div class="container">
+            <h2>🕹️ Linea Temporale dei Giochi Più Vecchi</h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-date">1952</div>
+                    <div class="timeline-content">
+                        <img src="src/images/Oxo/oxo.png" alt="Oxo">
+                        <h3>Oxo</h3>
+                        <p>Il primo tris digitale giocabile su computer.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">1958</div>
+                    <div class="timeline-content">
+                        <img src="src/images/TennisForTwo/tennis.jpg" alt="Tennis for Two">
+                        <h3>Tennis for Two</h3>
+                        <p>Una simulazione di tennis su oscilloscopio.</p>
+                    </div>
+                </div>
+                
+
+                <div class="timeline-item">
+                    <div class="timeline-date">1972</div>
+                    <div class="timeline-content">
+                        <img src="src/images/Pong/pong.png" alt="Pong">
+                        <h3>Pong</h3>
+                        <p>Il primo videogioco arcade che ha fatto la storia.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">1980</div>
+                    <div class="timeline-content">
+                        <img src="src/images/PacMan/pacman.jpg" alt="Pac-Man">
+                        <h3>Pac-Man</h3>
+                        <p>Uno dei giochi arcade più iconici e amati di sempre.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">1984</div>
+                    <div class="timeline-content">
+                        <img src="src/images/Tetris/tetris.jpg" alt="Tetris">
+                        <h3>Tetris</h3>
+                        <p>Il puzzle game che ha conquistato il mondo.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">1985</div>
+                    <div class="timeline-content">
+                        <img src="src/images/SuperMario/mario.jpg" alt="Super Mario">
+                        <h3>Super Mario</h3>
+                        <p>Il platform che ha reso Nintendo un'icona.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">1996</div>
+                    <div class="timeline-content">
+                        <img src="src/images/Pokemon/pokemon.jpg" alt="Pokémon">
+                        <h3>Pokémon Rosso e Blu</h3>
+                        <p>Ha dato vita a un fenomeno mondiale.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2011</div>
+                    <div class="timeline-content">
+                        <img src="src/images/Minecraft/minecraft.jpg" alt="Minecraft">
+                        <h3>Minecraft</h3>
+                        <p>Ha rivoluzionato il genere sandbox.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Game Vault</h4>
+                    <p>Il miglior sito per gli amanti dei videogiochi.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="collezione.html"><i class="fas fa-gamepad"></i> Games</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li><a href="contatti.html"><i class="fas fa-envelope"></i> Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contatti</h4>
+                    <p><i class="fas fa-envelope"></i> Email: info@gamevault.com</p>
+                    <p><i class="fas fa-phone"></i> Telefono: +39 123 456 789</p>
+                </div>
+            </div>
+            <p class="text-center mt-4">&copy; 2025 Game Vault. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script defer src="js/games.js"></script>
+    <script defer src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

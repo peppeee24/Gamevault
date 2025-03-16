@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Dublin Core Metadata -->
+    <meta name="DC.Title" content="Web Project Plan - Game Vault">
+    <meta name="DC.Creator" content="GameVault">
+    <meta name="DC.Subject" content="Archivio di videogiochi, storia dei videogiochi, cultura videoludica">
+    <meta name="DC.Description" content="Scopri la collezione completa di Game Vault con i videogiochi più iconici e storici di sempre.">
+    <meta name="DC.Publisher" content="GameVault">
+    <meta name="DC.Contributor" content="Giuseppe Cozza">
+    <meta name="DC.Date" content="2025-03-04">
+    <meta name="DC.Type" content="Website Section">
+    <meta name="DC.Format" content="text/html">
+    <meta name="DC.Identifier" content="https://www.gamevault.com/collezione.html">
+    <meta name="DC.Source" content="https://www.gamevault.com">
+    <meta name="DC.Language" content="it">
+    <meta name="DC.Relation" content="https://www.gamevault.com/index.html">
+    <meta name="DC.Coverage" content="Mondo, Videogiochi">
+    <meta name="DC.Rights" content="© 2025 GameVault - Tutti i diritti riservati.">
+
+    <meta name="keywords" content="Web Project Plan, Game Vault, Piano di progetto, Archivio videogiochi, Sviluppo sito web, Pianificazione web, Design sito, Funzionalità Game Vault, Progettazione videoludica, Benchmark videogiochi, Struttura sito web, Design responsive, Funzionalità avanzate, Recensioni videogiochi, Database interattivo, Community videogiochi, Design interfaccia, Accessibilità web, Navigazione sito">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="src/images/logo.png">
+    <link rel="shortcut icon" href="src/images/logo.png">
+    <link rel="apple-touch-icon" href="src/images/logo.png">
+
+    <title>Game Vault - Web Project Plan</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="webproject-page">
+
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <span class="brand-text"><i class="fas fa-gamepad"></i> Game Vault</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="collezione.html"><i class="fas fa-gamepad"></i> Games</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-info-circle"></i> Info</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="about.html">About</a></li>
+                                <li><a class="dropdown-item" href="webproject.html">WebProject Plan</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="contatti.html"><i class="fas fa-envelope"></i> Contatti</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Home</a> » <a href="about.html">About</a> » <span>Web Project Plan</span>
+        </div>
+    </nav>
+
+    <!-- INTRODUZIONE -->
+    <section class="webproject-intro text-center">
+        <div class="container">
+            <h2>📌 Web Project Plan</h2>
+            <p>Il piano dettagliato per la progettazione, sviluppo e gestione del sito Game Vault.</p>
+        </div>
+    </section>
+
+    <div class="webproject-container">
+        <!-- Menu laterale -->
+        <aside class="webproject-sidebar">
+            <h3>📌 Navigazione</h3>
+            <ul class="project-nav">
+                <li><a href="#idea" class="nav-link"><i class="fas fa-lightbulb"></i> 1. Idea</a></li>
+                <li><a href="#brief" class="nav-link"><i class="fas fa-file-alt"></i> 2. Brief</a></li>
+                <li><a href="#benchmark" class="nav-link"><i class="fas fa-search"></i> 3. Benchmark</a></li>
+                <li><a href="#struttura" class="nav-link"><i class="fas fa-sitemap"></i> 4. Struttura</a></li>
+                <li><a href="#layout" class="nav-link"><i class="fas fa-paint-brush"></i> 5. Layout</a></li>
+                <li><a href="#usabilita" class="nav-link"><i class="fas fa-gamepad"></i> 6. Usabilità</a></li>
+                <li><a href="#servizi" class="nav-link"><i class="fas fa-tools"></i> 7. Servizi</a></li>
+                <li><a href="#bibliografia" class="nav-link"><i class="fas fa-book"></i> 8. Bibliografia</a></li>
+            </ul>
+        </aside>
+
+        <!-- Contenuto principale -->
+        <main class="webproject-content">
+            
+            <!-- IDEA -->
+            <section class="card" id="idea">
+                <h2>💡 Idea</h2>
+                <p><strong>Game Vault</strong> nasce con l'obiettivo di diventare un archivio digitale di riferimento per tutti gli
+                    appassionati di videogiochi.
+                    Il progetto è pensato per offrire un'esperienza completa e immersiva, in cui gli utenti possano accedere a
+                    informazioni dettagliate su ogni videogioco,
+                    consultare recensioni, esplorare la storia del settore e interagire con una community di appassionati.</p>
+                
+                <p>Nel mondo odierno, i videogiochi sono molto più di un semplice passatempo. Rappresentano un'espressione artistica e
+                    culturale, con trame complesse, personaggi memorabili e innovazioni tecnologiche che hanno segnato intere
+                    generazioni.
+                    <strong>Game Vault</strong> si propone di raccogliere e catalogare questa immensa ricchezza, offrendo agli utenti
+                    una piattaforma intuitiva e accessibile.
+                </p>
+                <hr>
+
+                <ul>
+                    <li>🎯 <strong>Obiettivo:</strong> Creare un database interattivo che valorizzi il videogioco non solo come forma di
+                        intrattenimento,
+                        ma anche come prodotto culturale, storico e artistico. Ogni gioco avrà una scheda dettagliata con informazioni
+                        su sviluppo, gameplay, curiosità e impatto sul settore.</li>
+                
+                    <li>👥 <strong>Pubblico:</strong> Il progetto è pensato per <strong>gamer, storici del settore, collezionisti e
+                            studenti</strong> interessati a esplorare il mondo dei videogiochi in profondità.
+                        Grazie alla sua struttura organizzata e alla navigazione intuitiva, il sito sarà utile sia a chi cerca
+                        informazioni tecniche, sia a chi desidera approfondire aspetti narrativi e storici.</li>
+                
+                    <li>📚 <strong>Funzionalità principali:</strong></li>
+                    <ul>
+                        <li>🔎 <strong>Ricerca avanzata:</strong> Gli utenti possono cercare i giochi attraverso un sistema di filtri
+                            intelligenti, che permette di selezionare nome, genere, anno e piattaforma</li>
+                        <li>📝 <strong>Recensioni e valutazioni:</strong> Ogni gioco avrà recensioni della community, punteggi e
+                            commenti per favorire il confronto tra gli utenti. E possibile anche condividere con gli amici la pagina del
+                            videogioco</li>
+                        <li>📖 <strong>Storia e curiosità:</strong> Approfondimenti sulla nascita dei giochi, interviste agli
+                            sviluppatori e contenuti esclusivi.</li>
+                    </ul>
+                </ul>
+            </section>
+
+            <!-- BRIEF -->
+            <section class="card" id="brief">
+                <h2>🔍 Brief</h2>
+                <p>Game Vault è stato sviluppato con l’obiettivo di fornire agli utenti un archivio digitale completo e dettagliato
+                    dedicato al mondo dei videogiochi. La piattaforma è stata progettata per garantire un'esperienza d’uso chiara,
+                    intuitiva e coinvolgente, offrendo contenuti strutturati in maniera logica e facilmente accessibili.</p>
+                
+                <p>Attraverso il sito, gli utenti potranno esplorare un database ampio e sempre aggiornato, con schede dettagliate
+                    sui videogiochi, informazioni sugli sviluppatori, le piattaforme di rilascio, le caratteristiche tecniche e molto
+                    altro.
+                    Oltre a fornire dati, Game Vault mira a costruire una community attiva, permettendo agli utenti di lasciare
+                    recensioni,
+                    commentare e condividere le proprie esperienze di gioco.</p>
+                
+                <p>Grazie a un’interfaccia moderna e reattiva, il sito offre una navigazione fluida sia su desktop che su dispositivi
+                    mobili,
+                    garantendo accessibilità a tutti gli utenti, senza necessità di registrazione obbligatoria.
+                </p>
+
+                
+                <ul>
+                    <li><strong>🎯 Finalità:</strong> Creare un ambiente interattivo e informativo per gli appassionati di videogiochi, 
+                        promuovendo il videogioco come prodotto culturale e non solo come semplice forma di intrattenimento.</li>
+                    <li><strong>👥 Pubblico:</strong> Il target principale include gamer di tutte le età, collezionisti, studiosi del settore 
+                        videoludico e studenti interessati ad approfondire la storia e l’evoluzione dei videogiochi.</li>
+                    <li><strong>🔑 Accesso:</strong> La piattaforma è disponibile sia su desktop che su dispositivi mobili, garantendo 
+                        un’esperienza ottimale su ogni tipo di schermo. L’accesso è libero e non richiede una registrazione obbligatoria.</li>
+                    <li><strong>📂 Contenuti e dati:</strong> Il database è aggiornato regolarmente con nuove schede di gioco, recensioni e
+                        approfondimenti.
+                        I dati sono raccolti da fonti affidabili come archivi ufficiali, interviste e contributi della community.
+                        Gli utenti possono contribuire con recensioni e segnalazioni per migliorare la qualità delle informazioni.</li>
+                </ul>
+            </section>
+
+            <!-- BENCHMARK -->
+            <section class="card" id="benchmark">
+                <h2>🔍 Benchmark</h2>
+                <p>
+                    Per comprendere le strategie migliori e individuare le opportunità di miglioramento, abbiamo analizzato alcuni
+                    dei principali siti web dedicati ai videogiochi, tra cui <a href="https://www.ign.com/" target="_blank">IGN</a>,
+                    <a href="https://www.metacritic.com/" target="_blank">Metacritic</a> e <a href="https://www.mobygames.com/"
+                        target="_blank">MobyGames</a>.
+                    L’analisi ha evidenziato punti di forza e carenze di queste piattaforme, permettendoci di sviluppare <strong>Game Vault</strong>
+                    con caratteristiche uniche e miglioramenti significativi.
+                </p>
+            
+                <hr>
+            
+                <h3>🎯 Punti di forza dei concorrenti</h3>
+                <p>
+                    I principali siti di riferimento per il mondo videoludico presentano diverse funzionalità apprezzate dagli
+                    utenti:
+                </p>
+                <ul>
+                    <li>✔️ <strong>Interfaccia strutturata:</strong> IGN e Metacritic offrono una navigazione intuitiva con sezioni
+                        ben organizzate.</li>
+                    <li>✔️ <strong>Recensioni e punteggi:</strong> Metacritic aggrega voti da critica e utenti, fornendo un rapido
+                        colpo d'occhio sulla qualità dei giochi.</li>
+                    <li>✔️ <strong>Archivio storico dettagliato:</strong> MobyGames si distingue per la sua raccolta di informazioni
+                        tecniche e storiche sui videogiochi.</li>
+                    <li>✔️ <strong>Copertura editoriale:</strong> IGN pubblica articoli, interviste e approfondimenti su tutte le
+                        novità del settore.</li>
+                </ul>
+            
+                <p>
+                    Tuttavia, queste piattaforme presentano alcuni <strong>limiti</strong> che riducono l’esperienza interattiva e la profondità
+                    di esplorazione.
+                    Ad esempio, la navigazione può risultare dispersiva, i dati sulle storie dei giochi sono spesso superficiali e
+                    l’interazione tra utenti è limitata.
+                </p>
+            
+                <hr>
+            
+                <h3>⚡ Perché Game Vault è innovativo?</h3>
+                <p>
+                    Game Vault non è solo un database di videogiochi, ma un portale pensato per offrire un'esperienza immersiva,
+                    interattiva e informativa.
+                    Il sito integra tutte le migliori funzionalità dei competitor, migliorandole e aggiungendo caratteristiche
+                    uniche.
+                </p>
+            
+                <ul>
+                    <li>🔹 <strong>Un'esperienza personalizzata:</strong> A differenza dei competitor, Game Vault offre
+                        un'interfaccia moderna e reattiva,
+                        ottimizzata per un'esplorazione fluida sia su desktop che su mobile.</li>
+                    <li>🔹 <strong>Un database interattivo e ricco di dettagli:</strong> Ogni gioco ha una pagina dedicata con
+                        <strong>, video, storia,
+                        curiosità e approfondimenti esclusivi</strong>, non solo una semplice scheda tecnica.</li>
+                    <li>🔹 <strong>Linea temporale videoludica:</strong> Una funzione unica che permette di visualizzare i giochi
+                        più importanti della storia
+                        in ordine cronologico, aiutando gli utenti a scoprire l’evoluzione del gaming.</li>
+                    <li>🔹 <strong>Community attiva e commenti:</strong> Gli utenti possono <strong>commentare i giochi</strong>, lasciare
+                        opinioni e interagire con altri giocatori,
+                        un aspetto che manca nei siti competitor.</li>
+                    <li>🔹 <strong>Funzione di ricerca avanzata:</strong> Game Vault permette di <strong>filtrare i giochi per genere,
+                        anno, piattaforma</strong> e altre caratteristiche,
+                        rendendo la ricerca più mirata e approfondita rispetto ai semplici elenchi presenti su altri siti.</li>
+                    <li>🔹 <strong>Condivisione social:</strong> Grazie all’integrazione con <a
+                            href="https://sharethis.com/">ShareThis</a>, gli utenti possono condividere
+                        facilmente i giochi preferiti su tutti i principali social media.</li>
+                </ul>
+            
+                <p>
+                    <strong>Game Vault</strong> si distingue per il suo approccio <strong>innovativo e interattivo</strong>, ponendosi come un punto di
+                    riferimento per tutti gli appassionati di videogiochi.
+                    Il nostro obiettivo è offrire una piattaforma che non solo informi, ma anche coinvolga attivamente la community,
+                    rendendo ogni utente parte integrante dell’esperienza.
+                </p>
+            </section>
+
+            <!-- STRUTTURA -->
+            <section class="card" id="struttura">
+                <h2>🎨 Struttura</h2>
+                <p><strong>Game Vault</strong> è organizzato in modo da offrire una visione chiara e dettagliata del mondo
+                    videoludico. La sua struttura permette di esplorare i giochi secondo criteri fondamentali, rendendo la
+                    navigazione semplice e intuitiva.</p>
+                
+                <hr>
+
+                <h2>🗺️ Mappa Concettuale</h2>
+                <p>La mappa concettuale rappresenta graficamente l'organizzazione di Game Vault, evidenziando le principali
+                    categorie con cui vengono classificati i videogiochi.</p>
+            
+                <ul>
+                    <li>📅 <strong>Anno di pubblicazione:</strong> Dal 1952 ad oggi, per tracciare l'evoluzione del settore.</li>
+                    <li>🌍 <strong>Ambientazione:</strong> Distinzione tra:
+                        <ul>
+                            <li>🌀 Mondi immaginari: fantasy, fantascienza, distopico/post-apocalittico.</li>
+                            <li>🏛️ Mondo reale: contesti storici e contemporanei.</li>
+                        </ul>
+                    </li>
+                    <li>🎮 <strong>Generi di gioco:</strong> Include GDR, arcade, platform, survival, FPS, TPS e altri.</li>
+                    <li>🏢 <strong>Compagnie:</strong> Classificazione in base a sviluppatori e publisher.</li>
+                    <li>🖥️ <strong>Piattaforme disponibili:</strong> PC, PlayStation, Xbox, Nintendo e Mobile.</li>
+                    <li>🎭 <strong>Modalità di gioco:</strong> Single-player, multiplayer, co-op e battle royale.</li>
+                </ul>
+            
+                <img src="src/images/projectplan/Mappa concettuale.jpg" width="50%" height="auto" alt="Mappa concettuale">
+                
+                <hr>
+
+                <h2>📝 Schema delle Dipendenze</h2>
+                <p>Lo schema delle dipendenze illustra la gerarchia delle pagine e le loro interconnessioni per garantire una
+                    navigazione fluida.</p>
+                
+                <ul>
+                    <li>🏠 <strong>Homepage:</strong> Punto di accesso principale con le sezioni di ricerca, giochi popolari e ultime
+                        novità.</li>
+                    <li>📂 <strong>Pagina Collezione:</strong> Catalogo completo dei giochi, con strumenti di ricerca avanzati, filtri
+                        per categoria e una linea del tempo interattiva per visualizzare i titoli più influenti.</li>
+                    <li>🕹️ <strong>Pagina Singola del Gioco:</strong> Ogni gioco ha una scheda dettagliata che include:
+                        <ul>
+                            <li>📖 <strong>Storia e contesto:</strong> Introduzione alla trama e sviluppo del gioco.</li>
+                            <li>🎥 <strong>Media:</strong> Video trailer, immagini e screenshot ufficiali.</li>
+                            <li>📝 <strong>Recensioni:</strong> Sezione dedicata alle opinioni degli utenti e alle valutazioni.</li>
+                            <li>📊 <strong>Dati tecnici:</strong> Informazioni su sviluppatori, publisher, piattaforme e generi.</li>
+                            <li>🔗 <strong>Condivisione:</strong> Pulsanti per condividere il gioco sui social media.</li>
+                        </ul>
+                    </li>
+                    <li>📬 <strong>Pagina Contatti:</strong> Modulo per contattare lo staff e suggerire nuovi giochi da inserire nella
+                        piattaforma.</li>
+                    <li>📖 <strong>Pagina About:</strong> Sezione che descrive il progetto, la sua missione e la community di Game
+                        Vault.</li>
+                </ul>
+                
+                <img src="src/images/projectplan/SchemaDipendenze.jpg" width="50%" height="auto" alt="Schema delle dipendenze">
+                <hr>
+
+
+                <h2>📝 Categoria Descrittiva</h2>
+                <p>Ogni videogioco all'interno di Game Vault è accompagnato da una scheda descrittiva dettagliata, che ne permette un'esplorazione approfondita.</p>
+
+                <ul>
+                    <li>📌 <strong>Titolo:</strong> [Nome del videogioco]</li>
+                    <li>👤 <strong>Autore (Game Designer):</strong> [Nome del game designer]</li>
+                    <li>🖥️ <strong>Sviluppatore:</strong> [Nome dello studio di sviluppo]</li>
+                    <li>🏢 <strong>Publisher:</strong> [Nome del publisher]</li>
+                    <li>📖 <strong>Descrizione:</strong> [Breve trama o contesto del gioco]</li>
+                    <li>📅 <strong>Data di rilascio:</strong> [Data di pubblicazione]</li>
+                    <li>📚 <strong>Genere:</strong> [Es. RPG, FPS, Horror, Adventure]</li>
+                    <li>🎭 <strong>Personaggi principali:</strong> [Protagonisti e antagonisti]</li>
+                    <li>🌍 <strong>Ambientazione:</strong> [Luogo o universo di gioco]</li>
+                    <li>💾 <strong>Piattaforme:</strong> [Dove è disponibile il gioco]</li>
+                    <li>🎥 <strong>Video:</strong> Dove poter guardare il video di un gameplay o il trailer</li>
+                    <li>📝 <strong>Recensioni:</strong> In cui e' possibile leggere le opinioni degli utenti</a></li>
+                    <li>📖 <strong>Storia e approfondimenti:</strong> Articoli sulla creazione del gioco, interviste agli sviluppatori e dettagli dietro le quinte.</li>
+                    <li>🔗 <strong>Condividi:</strong> Possibilita di condividere il gioco sulle varie piattaforme</li>
+                </ul>
+            </section>
+
+            <!-- Layout -->
+            <section class="card" id="layout">
+                <h2>🎨 Layout</h2>
+                <p>
+                    Il design di <strong>Game Vault</strong> è stato realizzato per garantire un'esperienza di navigazione fluida e intuitiva, con un’interfaccia moderna e facilmente accessibile.
+                    La struttura del sito è stata progettata per guidare l'utente attraverso le diverse sezioni con una disposizione chiara e organizzata.
+                </p>
+            
+                <h3>📌 Intestazione e Navigazione</h3>
+                <p>
+                    L’<strong>header</strong> contiene il logo del sito sulla sinistra, mentre sulla destra sono presenti i collegamenti principali: <strong>"Home", "Games", "About" e "Contatti"</strong>.
+                    Il menu di navigazione è ottimizzato sia per desktop che per dispositivi mobili, con una <strong>side navigation</strong> a scomparsa che si attiva su schermi più piccoli.
+                </p>
+            
+                <h3>🏠 Homepage</h3>
+                <p>
+                    La homepage è il punto di ingresso principale e presenta diverse sezioni fondamentali:
+                </p>
+                <ul>
+                    <li>🎯 <strong>Hero Section:</strong> Un titolo accattivante e un’immagine di sfondo con una <strong>barra di ricerca</strong> per trovare rapidamente i giochi presenti nel database.</li>
+                    <li>🎮 <strong>Sezione Giochi Popolari:</strong> Un elenco visivo dei giochi più giocati del momento con immagini, descrizioni e link diretti alle pagine di dettaglio.</li>
+                    <li>🏆 <strong>Sezione Giochi Storici:</strong> Una raccolta dei videogiochi che hanno segnato la storia dell’industria videoludica.</li>
+                    <li>📝 <strong>Registrazione e Notifiche:</strong> Una sezione invita gli utenti a registrarsi per ricevere aggiornamenti e partecipare alla community.</li>
+                </ul>
+            
+                <h3>📚 Pagina Collezione</h3>
+                <p>
+                    La <strong>pagina "Collezione"</strong> raccoglie tutti i videogiochi presenti nel database. Per facilitare la ricerca e la navigazione, sono state implementate diverse funzionalità:
+                </p>
+                <ul>
+                    <li>🔍 <strong>Search bar:</strong> Consente di cercare un gioco digitandone il nome.</li>
+                    <li>🎭 <strong>Filtri:</strong> Permettono di selezionare giochi in base al genere, alla piattaforma o all’anno di pubblicazione.</li>
+                    <li>⏳ <strong>Linea Temporale:</strong> Rappresenta in ordine cronologico i giochi più famosi presenti nel sito.</li>
+                    <li>📄 <strong>Pagination:</strong> Per evitare una visualizzazione eccessivamente lunga, i giochi sono suddivisi in più pagine con pulsanti di navigazione.</li>
+                </ul>
+                <p>
+                    Ogni gioco è rappresentato all’interno di una <strong>card interattiva</strong> contenente immagine, titolo e breve descrizione. 
+                    Cliccando su un gioco, si viene reindirizzati alla pagina dedicata con ulteriori dettagli.
+                </p>
+            
+                <h3>🎮 Pagina Singolo Gioco</h3>
+                <p>
+                    Ogni gioco ha una pagina dedicata, con una struttura ben organizzata per offrire agli utenti una panoramica completa.
+                </p>
+                <ul>
+                    <li>📌 <strong>Breadcrumb Navigation:</strong> Aiuta l’utente a capire dove si trova e a tornare indietro facilmente.</li>
+                    <li>🖼️ <strong>Immagine e Video:</strong> Una sezione con immagini del gioco e un video trailer.</li>
+                    <li>📜 <strong>Trama e Storia:</strong> Approfondimento sulla storia del videogioco e il suo impatto culturale.</li>
+                    <li>📊 <strong>Dettagli Tecnici:</strong> Informazioni su sviluppatore, anno di rilascio, piattaforme e genere.</li>
+                    <li>💬 <strong>Sezione Commenti:</strong> Gli utenti possono lasciare recensioni e interagire con la community.</li>
+                    <li>🔗 <strong>Pulsanti di Condivisione:</strong> Permettono di condividere il gioco sui social media.</li>
+                </ul>
+            
+                <h3>🔽 Footer e Accessibilità</h3>
+                <p>
+                    Il <strong>footer</strong> contiene link rapidi alle sezioni principali del sito, informazioni di contatto e collegamenti ai social media.
+                    Durante la fase di progettazione, sono state ottimizzate le immagini e alcuni elementi grafici per migliorare la fruibilità su dispositivi mobili, riducendo il disordine visivo.
+                </p>
+            
+                <!-- Carosello Bootstrap -->
+                <div id="carouselLayout" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><img src="src/images/projectplan/HomeWireframe.png" width="auto" height = "1400px" alt="Wireframe della Home"></div>
+                        <div class="carousel-item"><img src="src/images/projectplan/GamesWireframe.png" width="auto" height = "1400px" alt="Wireframe della Home"></div>
+                        <div class="carousel-item"><img src="src/images/projectplan/GameWireframe.png" width="auto" height = "1400px" alt="Wireframe della Home"></div>
+                        <div class="carousel-item"><img src="src/images/projectplan/AboutWireframe.png" width="auto" height = "1400px" alt="Wireframe della Home"></div>
+                        <div class="carousel-item"><img src="src/images/projectplan/ContactWireframe.png" width="auto" height = "1400px" alt="Wireframe della Home"></div>
+                    </div>
+                    <!-- Pulsanti di navigazione -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselLayout" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Precedente</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselLayout" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Successivo</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- USABILITÀ -->
+            <section class="card" id="usabilita">
+                <h2>🎮 Usabilità</h2>
+                <p>
+                    Game Vault è stato progettato per offrire un’esperienza fluida, intuitiva e accessibile su qualsiasi
+                    dispositivo,
+                    sfruttando al massimo le potenzialità di <strong>Bootstrap</strong> per garantire una navigazione chiara e
+                    un’interfaccia moderna.
+                </p>
+            
+                <h3>📌 Architettura e Navigazione</h3>
+                <p>Il sito segue i <strong>principi di design consolidati</strong> per rendere la navigazione semplice e veloce:</p>
+                <ul>
+                    <li>🔺 <strong>Navbar fissa:</strong> una barra di navigazione sempre visibile, ottimizzata per desktop e
+                        mobile.</li>
+                    <li>📂 <strong>Struttura a card:</strong> i contenuti sono suddivisi in <strong>sezioni ben organizzate</strong>
+                        per una consultazione immediata.</li>
+                    <li>🗺️ <strong>Breadcrumbs:</strong> un <strong>sistema di navigazione gerarchico</strong> che aiuta l’utente a
+                        orientarsi facilmente tra le pagine.</li>
+                </ul>
+            
+                <h3>🎨 Design e Tipografia</h3>
+                <p>Il layout è stato progettato per garantire <strong>coerenza visiva</strong> e facilità di lettura:</p>
+                <ul>
+                    <li>🖌️ <strong>Stile uniforme:</strong> bottoni, card e icone mantengono un <strong>design coerente</strong> in
+                        tutto il sito.</li>
+                    <li>🎨 <strong>Palette di colori:</strong> utilizza una combinazione di <strong>toni scuri e accenti rossi</strong>,
+                        migliorando il contrasto e l’attenzione visiva.</li>
+                    <li>🔡 <strong>Tipografia chiara:</strong> il font scelto garantisce leggibilità su tutti i dispositivi.</li>
+                    <li>🔍 <strong>Uso del grassetto:</strong> evidenzia le parole chiave per una lettura più efficace.</li>
+                </ul>
+        
+            
+                <h3>📱 Ottimizzazione Mobile</h3>
+                <p>Game Vault è stato progettato per adattarsi a qualsiasi schermo grazie a <strong>Bootstrap</strong> e a un layout
+                    completamente responsive.</p>
+                <ul>
+                    <li>📏 <strong>Layout flessibile:</strong> gli elementi si adattano automaticamente alle dimensioni del
+                        dispositivo.</li>
+                    <li>🚀 <strong>Caricamento veloce:</strong> immagini ottimizzate e codice leggero garantiscono prestazioni
+                        elevate.</li>
+                </ul>
+            
+                <h3>🛠️ Accessibilità e User Experience</h3>
+                <p>Per migliorare l’interazione dell’utente, sono state adottate diverse strategie di UX e accessibilità:</p>
+                <ul>
+                    <li>🎯 <strong>Contrasti elevati:</strong> migliorano la leggibilità per chi ha difficoltà visive.</li>
+                    <li>📌 <strong>Icone intuitive:</strong> semplificano la comprensione delle funzionalità principali.</li>
+                    <li>📖 <strong>Rivelazione progressiva:</strong> i contenuti sono mostrati in modo graduale per evitare un
+                        sovraccarico di informazioni.</li>
+                </ul>
+            </section>
+
+            
+            <!-- SERVIZI -->
+            <section class="card" id="servizi">
+                <h2>🛠️ Servizi</h2>
+                <p>Game Vault offre una serie di strumenti per facilitare la navigazione e l'interazione con i contenuti
+                    videoludici. L'obiettivo è fornire agli utenti un’esperienza fluida, intuitiva e coinvolgente.</p>
+
+                <h3>📌 Strumenti di Navigazione</h3>
+                <p>Per aiutare gli utenti a esplorare i contenuti in modo rapido ed efficiente, Game Vault utilizza i seguenti
+                    strumenti:</p>
+                <ul>
+                    <li>🔎 <strong>Search bar:</strong> disponibile sia nella homepage che nella pagina della collezione per cercare
+                        i giochi in modo immediato.</li>
+                    <li>🧭 <strong>Breadcrumbs:</strong> presente in ogni pagina per aiutare gli utenti a sapere sempre dove si
+                        trovano all'interno del sito.</li>
+                    <li>🎮 <strong>Card Interattive:</strong> ogni gioco è rappresentato con una <strong>card personalizzata</strong> che mostra
+                        dettagli, immagini e link diretti alla scheda informativa.</li>
+                        <li>📄 <strong>Metadati Dublin Core:</strong> nella pagina di ogni gioco sono presenti informazioni dettagliate come autore, sviluppatore, data di rilascio e genere, visualizzabili in una sezione dedicata.</li>
+                </ul>
+
+                <h3>🎭 Strumenti di Interazione</h3>
+                <p>Per rendere l'esperienza utente più coinvolgente, Game Vault ha integrato diversi strumenti interattivi:</p>
+                <ul>
+                    <li>📝 <strong>Commenti e Recensioni:</strong> gli utenti possono lasciare opinioni sui giochi, leggere
+                        recensioni e mettere "Mi Piace".</li>
+                    <li>📊 <strong>Valutazioni:</strong> ogni gioco può essere votato dalla community per contribuire alla sua
+                        popolarità.</li>
+                    <li>📤 <strong>Condivisione Social:</strong> grazie all’integrazione con <a href="https://sharethis.com/"
+                            target="_blank">ShareThis</a>, gli utenti possono condividere facilmente le pagine dei giochi sui social
+                        media.</li>
+                    <li>🎥 <strong>Carosello Multimediale:</strong> ogni scheda gioco include un <strong>carosello con immagini e video</strong>,
+                        per offrire un'anteprima dinamica del titolo.</li>
+                </ul>
+
+                <h3>📲 Ottimizzazione per Dispositivi Mobili</h3>
+                <p>Game Vault è stato progettato per essere completamente <strong>responsive</strong>, offrendo un’esperienza fluida anche su
+                    smartphone e tablet:</p>
+                <ul>
+                    <li>📏 <strong>Layout flessibile:</strong> le sezioni si adattano dinamicamente alle dimensioni dello schermo.</li>
+                    <li>⚡ <strong>Navigazione semplificata:</strong> i pulsanti sono facilmente cliccabili e ottimizzati per il touch screen.
+                    </li>
+                </ul>
+
+                <h3>🚀 Possibili Miglioramenti Futuri</h3>
+                <p>Per rendere Game Vault ancora più completo, in futuro potrebbero essere aggiunte nuove funzionalità come:</p>
+                <ul>
+                    <li>🎯 <strong>Leaderboard Personalizzate:</strong> classifiche basate sulle recensioni e i voti degli utenti.</li>
+                    <li>📅 <strong>Eventi e News:</strong> una sezione con notizie sugli aggiornamenti dei giochi e eventi speciali.</li>
+                </ul>
+            </section>
+
+            <!-- BIBLIOGRAFIA E SITOGRAFIA -->
+            <section class="card" id="bibliografia">
+                <h2>📚 Bibliografia e Sitografia</h2>
+                <p>Per la realizzazione di Game Vault sono state utilizzate diverse fonti per raccogliere informazioni, immagini e
+                    materiali grafici.</p>
+
+                <h3>🗺️ Strumenti utilizzati per Wireframe e Mappe</h3>
+                <ul>
+                    <li>🖥️ <a href="https://balsamiq.com" target="_blank">Balsamiq</a> - Creazione di wireframe.</li>
+                    <li>📌 <a href="https://app.diagrams.net/" target="_blank">Diagrams.net</a> - Realizzazione di mappe concettuali e diagrammi.</li>
+                </ul>
+
+                <h3>📖 Fonti per i Contenuti</h3>
+                <ul>
+                    <li>🌍 <a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a> - Informazioni storiche sui videogiochi.</li>
+                    <li>🎥 <a href="https://www.youtube.com/" target="_blank">YouTube</a> - Trailer ufficiali e approfondimenti.</li>
+                    <li>📌 <a href="https://www.ign.com/" target="_blank">IGN</a> - Recensioni, interviste e analisi di settore.</li>
+                    <li>🎮 <a href="https://www.mobygames.com/" target="_blank">MobyGames</a> - Database di videogiochi con dettagli su sviluppo e pubblicazione.</li>
+                    <li>📊 <a href="https://www.metacritic.com/" target="_blank">Metacritic</a> - Punteggi aggregati e analisi critiche.</li>
+                    <li>📜 <a href="https://www.gameinformer.com/" target="_blank">Game Informer</a> - Articoli e approfondimenti sull’industria videoludica.</li>
+                </ul>
+
+                <h3>🖼️ Fonti per le Immagini</h3>
+                <ul>
+                    <li>📷 Le immagini utilizzate provengono da fonti pubbliche su internet, tra cui <strong>Google Immagini</strong>, screenshot ufficiali dai siti degli sviluppatori e store digitali.</li>
+                </ul>
+                
+                <h3>📂 Testi e Materiali Aggiuntivi</h3>
+                <ul>
+                    <li>📑 I testi e le descrizioni presenti su Game Vault sono stati elaborati basandosi su informazioni reperite online, tra cui siti ufficiali, enciclopedie digitali e community di appassionati.</li>
+                    <li>📚 Alcune informazioni sono state estratte e rielaborate da articoli dedicati all’industria videoludica.</li>
+                </ul>
+            </section>
+
+
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Game Vault</h4>
+                    <p>Il miglior sito per gli amanti dei videogiochi.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="collezione.html"><i class="fas fa-gamepad"></i> Games</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li><a href="contatti.html"><i class="fas fa-envelope"></i> Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contatti</h4>
+                    <p><i class="fas fa-envelope"></i> Email: info@gamevault.com</p>
+                    <p><i class="fas fa-phone"></i> Telefono: +39 123 456 789</p>
+                </div>
+            </div>
+            <p class="text-center mt-4">&copy; 2025 Game Vault. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

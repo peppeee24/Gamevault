@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Dublin Core Metadata -->
+    <meta name="DC.Title" content="Game - Game Vault">
+    <meta name="DC.Creator" content="GameVault">
+    <meta name="DC.Subject" content="Archivio di videogiochi, storia dei videogiochi, cultura videoludica">
+    <meta name="DC.Description" content="Scopri la collezione completa di Game Vault con i videogiochi più iconici e storici di sempre.">
+    <meta name="DC.Publisher" content="GameVault">
+    <meta name="DC.Contributor" content="Giuseppe Cozza">
+    <meta name="DC.Date" content="2025-03-04">
+    <meta name="DC.Type" content="Website Section">
+    <meta name="DC.Format" content="text/html">
+    <meta name="DC.Identifier" content="https://www.gamevault.com/collezione.html">
+    <meta name="DC.Source" content="https://www.gamevault.com">
+    <meta name="DC.Language" content="it">
+    <meta name="DC.Relation" content="https://www.gamevault.com/index.html">
+    <meta name="DC.Coverage" content="Mondo, Videogiochi">
+    <meta name="DC.Rights" content="© 2025 GameVault - Tutti i diritti riservati.">
+
+    <meta name="keywords" content="Game Vault, Gioco, Videogioco, Dettagli del gioco, Storia del gioco, Successo del gioco, Sviluppatore del gioco, Piattaforma, Genere di gioco, Immagini gioco, Video gioco, Commenti gioco, Archivio videogiochi, Storia dei videogiochi, Videogiochi storici, Cultura videoludica, Game Vault commenti, Game Vault storia, Game Vault giochi storici, Game Vault recensioni, Collezione giochi Game Vault, Videogiochi più iconici, Commenti utente videogiochi, Piattaforme videoludiche">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/images/logo.png">
+    <link rel="shortcut icon" href="src/images/logo.png">
+    <link rel="apple-touch-icon" href="src/images/logo.png">
+    <title>Game Vault - Gioco</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/games.js"></script>
+    <script defer src="js/script.js"></script>
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=67d02419bc16930012085961&product=inline-share-buttons' async='async'></script>
+</head>
+
+<body class="game-detail">
+
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <span class="brand-text"><i class="fas fa-gamepad"></i> Game Vault</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="collezione.html"><i class="fas fa-gamepad"></i> Games</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-info-circle"></i> Info</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="about.html">About</a></li>
+                                <li><a class="dropdown-item" href="webproject.html">WebProject Plan</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="contatti.html"><i class="fas fa-envelope"></i> Contatti</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Home</a> » <a href="collezione.html">Games</a> » <span
+                id="breadcrumb-game-name"></span>
+        </div>
+    </nav>
+
+    <!-- SEZIONE DETTAGLI GIOCO -->
+    <section class="game-detail-section">
+        <div class="container">
+
+            <h2 id="game-title"></h2>
+            <p class="game-meta"><span id="game-date"></span> | <span id="game-developer"></span> | <span
+                    id="game-platform"></span></p>
+
+            <!-- Immagine in evidenza -->
+            <div class="game-featured-image">
+                <img id="game-image" src="" alt="Game Image">
+            </div>
+
+            <p id="game-description"></p>
+
+
+
+            <!-- Slider immagini -->
+            <div class="slider">
+                <button class="prev-btn">❮</button>
+                <div class="slider-images"></div>
+                <button class="next-btn">❯</button>
+            </div>
+
+            <!-- SEZIONE STORIA DEL GIOCO -->
+            <div class="game-history">
+                <h3>📜 Storia e Successo</h3>
+                <p id="game-history"></p>
+            </div>
+
+            <!-- Video -->
+            <div class="game-video-container" id="game-video-container"></div>
+
+
+
+            <!-- Sezione dettagli extra -->
+            <div class="game-extra-details">
+                <h3>Dettagli del gioco</h3>
+                <ul>
+                    <li><strong>Genere:</strong> <span id="game-genre"></span></li>
+                    <li><strong>Piattaforma:</strong> <span id="game-platform-det"></span></li>
+                    <li><strong>Sviluppatore:</strong> <span id="game-developer-det"></span></li>
+                    <li><strong>Pubblicazione:</strong> <span id="game-date-det"></span></li>
+                </ul>
+            </div>
+
+            <div class="game-details"></div>
+        </div>
+    </section>
+    
+    <!-- ShareThis BEGIN -->
+    <div class="sharethis-inline-share-buttons"></div>
+
+
+    <!-- SEZIONE COMMENTI -->
+    <section class="game-comments">
+        <div class="container">
+            <h3>💬 Commenti</h3>
+
+            <!-- Lista dei commenti -->
+            <div id="comments-container"></div>
+
+            <!-- Form per inserire un nuovo commento -->
+            <div class="comment-form">
+                <textarea id="comment-input" placeholder="Scrivi un commento..." rows="3"></textarea>
+                <button id="add-comment-btn">Invia</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Game Vault</h4>
+                    <p>Il miglior sito per gli amanti dei videogiochi.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="collezione.html"><i class="fas fa-gamepad"></i> Games</a></li>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li><a href="contatti.html"><i class="fas fa-envelope"></i> Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Contatti</h4>
+                    <p><i class="fas fa-envelope"></i> Email: info@gamevault.com</p>
+                    <p><i class="fas fa-phone"></i> Telefono: +39 123 456 789</p>
+                </div>
+            </div>
+            <p class="text-center mt-4">&copy; 2025 Game Vault. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
