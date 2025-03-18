@@ -67,11 +67,11 @@ if (document.body.classList.contains('game-detail')) {
         metadataContainer.innerHTML = `
         <h2>📄 Metadata</h2>
         <ul class="metadata-list">
-            <li><span class="metadata-key">🕹️ Titolo:</span> <span class="metadata-value">${game.title}</span></li>
-            <li><span class="metadata-key">🖥️ Sviluppatore:</span> <span class="metadata-value">${game.developer || "N/D"}</span></li>
-            <li><span class="metadata-key">📅 Data di rilascio:</span> <span class="metadata-value">${game.date || "N/D"}</span></li>
-            <li><span class="metadata-key">📚 Genere:</span> <span class="metadata-value">${game.genre || "N/D"}</span></li>
-            <li><span class="metadata-key">📖 Descrizione:</span> <span class="metadata-value">${game.description || "Nessuna descrizione disponibile."}</span></li>
+            <li><span class="metadata-key" property="DC.Title">🕹️ Titolo:</span> <span class="metadata-value">${game.title}</span></li>
+            <li><span class="metadata-key" property="DC.Creator">🖥️ Sviluppatore:</span> <span class="metadata-value">${game.developer || "N/D"}</span></li>
+            <li><span class="metadata-key" property="DC.Date">📅 Data di rilascio:</span> <span class="metadata-value">${game.date || "N/D"}</span></li>
+            <li><span class="metadata-key" property="DC.Type">📚 Genere:</span> <span class="metadata-value">${game.genre || "N/D"}</span></li>
+            <li><span class="metadata-key" property="DC.Description">📖 Descrizione:</span> <span class="metadata-value">${game.description || "Nessuna descrizione disponibile."}</span></li>
         </ul>
         `;
 
